@@ -28,7 +28,7 @@ Projeto de uma página única para a Vinharia Agnello, desenvolvido como checkpo
 ## Estrutura do Projeto
 
 ```
-checkpoint03-flexbox/
+cp3Front/
 │
 ├── index.html
 ├── README.md
@@ -43,10 +43,10 @@ Eduardo Ulisses - rm566339
 ## Links
 
 - **Repositório no GitHub:**  
-  [https://github.com/seu-usuario/checkpoint03-flexbox](https://github.com/seu-usuario/checkpoint03-flexbox)
+  [Link do repositório Github](https://github.com/UlissesE/cp3Front)
 
 - **Site publicado no GitHub Pages:**  
-  [https://seu-usuario.github.io/checkpoint03-flexbox/](https://seu-usuario.github.io/checkpoint03-flexbox/)
+  [[Site criado](https://ulissese.github.io/cp3Front/)]
 
 ---
 
