@@ -38,7 +38,7 @@ cp3Front/
 
 ## Autor
 
-Eduardo Ulisses - rm566339
+Eduardo Ulisses Pereira da Silva - rm566339
 
 ## Links
 
