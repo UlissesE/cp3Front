@@ -7,6 +7,8 @@
 body {
     width: 100%;
     height: 100vh;
+    background-color: #FFF8EA;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .cabecalho {
@@ -16,29 +18,226 @@ body {
     align-items: center;
     gap: 50px;
     padding: 1% 5% 5% 5%;
-    background-color: darkgreen;
+    background-color: #3e2723;
 }
 
-
 .cabecalho__navegacao {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho__navegacao ul {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
+    list-style: none;
     gap: 5rem;
-    list-style-type: none;
-    
+}
+
+.cabecalho__navegacao li {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ffe082;
+}
+
+/* Efeito no menu de navegação */
+.cabecalho__navegacao li:hover {
+    color: #ffe082;
+    transform: scale(1.15);
+    transition: 0.2s;
 }
 
 main {
-    height: 100vh;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     padding: 5% 10%;
+}
+
+.titulo__inicial {
+    font-size: 3rem;
+    text-align: center;
+
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 8vh;
+    width: 100%;
+    margin: 5vh auto 0 auto;
+    padding-top: 3vh;
 }
 
 .produtos__item {
-    
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    max-height: 70vh;
+    padding: 0 10%;
+    justify-content: center;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.produtos__item:hover,
+.produtos__item:focus-within {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    transform: scale(1.03) rotate(-0.4deg);
+}
+
+.item__imagem {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem__vinho {
+    width: 100%;
+    max-width: 520px;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+.item__descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    text-align: justify;
+    height: 100%;
+    justify-content: center;
+}
+
+.secundario {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    height: 500px;
+    padding: 5vh 10%;
+    align-items: center;
+}
+
+.dicas__conteudo {
+    width: 60%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.paragrafo {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.dicas__link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #815B5B;
+    color: #FFF8EA;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+/* Efeito nos botões/links de destaque */
+.dicas__link:hover {
+    background-color: #ffe082;
+    color: #3e2723;
+    transform: scale(1.08);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.imagem {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.entregas__conteudo {
+    width: 60%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background: #3e2723;
+    color: #fff;
+    padding: 32px 0;
+    width: 100%;
+}
+
+.container__rodape {
+    display: flex;
+    max-width: 100%;
+    padding: 0 24px;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.rodape__informacoes,
+.rodape__redes-sociais {
+    justify-content: center;
+    margin: 0 16px;
+}
+
+.rodape__informacoes .titulo,
+.rodape__redes-sociais .titulo {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ffe082;
+}
+
+.rodape__informacoes .paragrafo {
+    margin: 4px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.rodape__redes-sociais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.rodape__redes-sociais li {
+    margin-bottom: 6px;
+}
+
+.rodape__redes-sociais a {
+    color: #ffe082;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: #ffab00;
+    text-decoration: none;
+}
+
+.rodape__redes-sociais a:active {
+    color: #815B5B;
+    background: #FFF8EA;
+    border-radius: 6px;
 }

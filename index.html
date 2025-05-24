@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinhria Agnello</title>
+    <title>Vinharia Agnello</title>
     <link rel="stylesheet" href="/css/flex-style.css">
 </head>
 
@@ -12,20 +12,26 @@
 
     <header class="cabecalho">
         <nav class="cabecalho__navegacao">
-            <li>Produtos</li>
-            <li>Sobre nós</li>
-            <li>Ajuda</li>
+            <ul>
+                <li>Produtos</li>
+                <li>Sobre nós</li>
+                <li>Ajuda</li>
+            </ul>
         </nav>
-
         <h1>Imagem</h1>
     </header>
 
     <main>
+
+        <h1 class="titulo__inicial">Aqui, nós trabalhamos com:</h1>
+
         <section class="container produtos">
             <div class="produtos__item">
                 <div class="item__imagem">
-                    <h1>imagem</h1>
+                    <img src="./assets/imgs/vinhosDicas/vinhoEspumante.png" alt=""
+                        class="imagem__vinho">
                 </div>
+
                 <div class="item__descricao">
                     <h1 class="descricao__titulo">Nome do vinho</h1>
                     <p class="descricao__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
@@ -37,8 +43,22 @@
             </div>
 
             <div class="produtos__item">
+                <div class="item__descricao">
+                    <h1 class="descricao__titulo">Nome do vinho</h1>
+                    <p class="descricao__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                        accusantium fugiat deleniti reiciendis saepe incidunt, necessitatibus nam vero. Accusantium
+                        exercitationem pariatur perspiciatis aspernatur molestiae aperiam? Commodi accusamus enim, id
+                        error explicabo, ipsa, pariatur minima maiores laudantium facere numquam! Hic, ex sequi? Error,
+                        corporis minima porro molestiae aliquam neque quas nemo.</p>
+                </div>
                 <div class="item__imagem">
-                    <h1>imagem</h1>
+                    <img src="./assets/imgs/vinhosDicas/vinhoTinto.jpg" alt="" class="imagem__vinho">
+                </div>
+            </div>
+
+            <div class="produtos__item">
+                <div class="item__imagem">
+                    <img src="./assets/imgs/vinhosDicas/vinhoFortificado.png" alt="" class="imagem__vinho">
                 </div>
                 <div class="item__descricao">
                     <h1 class="descricao__titulo">Nome do vinho</h1>
@@ -48,13 +68,52 @@
                         error explicabo, ipsa, pariatur minima maiores laudantium facere numquam! Hic, ex sequi? Error,
                         corporis minima porro molestiae aliquam neque quas nemo.</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="container secundario">
+            <div class="dicas__conteudo">
+                <h2 class="titulo">Gostaria de Mais dicas?</h2>
+                <p class="paragrafo">A Vinharia Agnello nasceu da paixão por bons vinhos e boas conversas. Com anos de
+                    experiência e um atendimento próximo, nossos especialistas te ajudam a escolher o rótulo ideal.
+                    Confira as dicas de quem vive o mundo do vinho.</p>
+                <a href="" class="dicas__link">Clique para mais dicas personalizadas!</a>
+            </div>
+            <div class="imagem">
+                <img src="./assets/imgs/vinhosDicas/mulherSegurandoVinho.jpg" alt="" class="imagem__vinho">
+            </div>
+        </section>
+
+        <section class="container secundario entregas">
+            <div class="imagem">
+                <img src="./assets/imgs/vinhosDicas/mulherSegurandoVinho.jpg" alt="" class="imagem__vinho">
+            </div>
+
+            <div class="entregas__conteudo">
+                <h2 class="titulo">Entregamos com todo o cuidado</h2>
+                <p class="paragrafo">Cuidamos de cada entrega como cuidamos dos nossos vinhos — com todo o cuidado e
+                    atenção que você merece.</p>
             </div>
 
         </section>
     </main>
 
     <footer>
-
+        <div class="container__rodape">
+            <div class="rodape__informacoes">
+                <h2 class="titulo">Vinharia Agnello</h2>
+                <p class="paragrafo">Rua dos Vinhos, 123 - São Paulo - SP</p>
+                <p class="paragrafo">Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="rodape__redes-sociais">
+                <h2 class="titulo">Redes Sociais</h2>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>
